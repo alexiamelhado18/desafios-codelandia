@@ -1,0 +1,29 @@
+/* Lexend Deca & Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&family=Roboto:wght@100&display=swap');
+/* 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+
+    --title: #313131;
+    --text: #B6B6B6;
+    --background-main:#F3F5F7;
+    --text-dt-desc: #717171;
+    --text-article-title: #1A202C;
+
+
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
