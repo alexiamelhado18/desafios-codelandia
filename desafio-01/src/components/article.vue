@@ -1,11 +1,11 @@
 <template>
-    <div class="card">
+    <div class="card" v-scroll-reveal.reset="{delay: 200}">
         <div class="header-card">
-            <p class="card-date">{{ date }}</p>
+            <p class="card-date" v-scroll-reveal.reset="{delay: 400}">{{ date }}</p>
             <img :src="img" alt="ícone de coração, indicando para salvar artigo">
         </div>
-        <h4 class="card-title">{{ title }}</h4>
-        <p class="card-description">{{ description }}</p>
+        <h4 class="card-title" v-scroll-reveal.reset="{delay: 500}">{{ title }}</h4>
+        <p class="card-description" v-scroll-reveal.reset="{delay: 600}">{{ description }}</p>
     </div>
 </template>
 <script>
