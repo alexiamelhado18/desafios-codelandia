@@ -9,15 +9,31 @@
     <div class="sub-header-image">
       <div class="background-image"></div>
       <h1>A melhor loja de Jordan</h1>
-      <p class="sub-header-text04">
-        O tênis Jordan é fruto de uma velha e forte <br />
-        parceria entre a Nike e o jogador Michael Jordan.
+      <p id="typed" class="sub-header-text04">
       </p>
+    </div>
+    <div id="typed-strings">
+      <p>O tênis Jordan é fruto de uma velha e forte <br />
+        parceria entre a Nike e o jogador Michael Jordan.</p>
     </div>
   </header>
 </template>
 <script>
-export default {};
+import Typed from "typed.js";
+export default{
+  methods:{
+    animationTyped: function(){
+      const typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 30,
+        loop: true
+      });
+    }
+  },
+  mounted(){
+    this.animationTyped();
+  }
+}
 </script>
 <style>
 header {
