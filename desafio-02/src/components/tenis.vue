@@ -2,14 +2,15 @@
   <b-row>
     <b-col
       class="d-flex justify-content-center align-items-center"
+      v-scroll-reveal.reset="{delay: 200}"
       cols="12"
       md="6"
       xl="3"
       v-for="(item, index) in images"
       :key="index"
     >
-      <div class="card-tenis">
-        <img :src="require(`@/assets/${item}`)" alt="Imgem do tênis" />
+      <div class="card-tenis" v-scroll-reveal.reset="{delay: 500}">
+        <img :src="require(`@/assets/${item}`)" alt="Imgem do tênis" v-scroll-reveal.reset="{delay: 600}"/>
       </div>
     </b-col>
   </b-row>
